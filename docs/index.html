@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> VARIA_LAB</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"rel="stylesheet"/>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+       <header class="site-header">
+    <section class="hero" aria-label="Featured hero images">
+      <div class="hero-slides">
+        <div
+          class="hero-slide active"
+          style="background-image: url('images/hero-1.jpg');"
+          aria-hidden="false"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('images/hero-2.jpg');"
+          aria-hidden="true"
+        ></div>
+      </div>
+
+      <div class="hero-logo-panel">
+        <video class="hero-video" autoplay loop muted playsinline>
+          <source src="Images/render.webm" type="video/webm" />
+          <source src="render.mov" type="video/quicktime" />
+        </video>
+      </div>
+    </section>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="catalog.html">Catalog</a>
+      <span>|</span>
+      <a href="events.html">Events</a>
+      <span>|</span>
+      <a href="projects.html">Projects</a>
+      <span>|</span>
+      <a href="staff.html">Staff</a>
+      <span>|</span>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-divider" aria-hidden="true"></div>
+  </header>
+  <main class="page-shell">
+    <section class="feature-slider" aria-label="Featured events">
+      <div class="feature-slides"></div>
+
+      <div class="feature-caption-bar">
+        <div class="feature-caption-left">
+          <h2 id="featureTitle"></h2>
+          <a id="featureButton" class="feature-button" href="#">View Event</a>
+        </div>
+
+        <div class="feature-caption-center" aria-label="Slide indicators"></div>
+
+        <div class="feature-caption-right">
+          <button class="arrow-btn" id="prevSlide" aria-label="Previous slide">‹</button>
+          <button class="arrow-btn" id="nextSlide" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="events-config.js"></script>
+  <script src="script_index.js"></script>
+    </body>
+</html>
